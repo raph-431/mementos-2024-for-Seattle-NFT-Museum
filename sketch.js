@@ -639,7 +639,7 @@ function draw() {
     }
   }
 
-  if ((millis() / 1000 - timer) > 10) { // every xx seconds...
+  if ((millis() / 1000 - timer) > 60) { // every xx seconds...
     timer = millis() / 1000;
     seed = int(random(9999999));
     randomSeed(seed);
